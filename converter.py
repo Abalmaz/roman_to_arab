@@ -4,12 +4,7 @@ roman = ('M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I', 
 arab = (1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1)
 
 def convert(n):
-    if n in roman:
-        return arab[roman.index(n)]
-    elif n in arab:
-        return roman[arab.index(n)]
-    else:
-        return "Sorry, you entered not roman or arabic number"
+    return arab[roman.index(n)]
 
 def roman_to_arab(num):
     result, i = 0, 0
